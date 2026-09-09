@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daywork Support</title>
+<meta name="description" content="Help, contact and answers for Daywork, the quoting and invoicing app for solo trades.">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#F4F5F4;
+    --surface:#FFFFFF;
+    --ink:#161A18;
+    --ink-soft:#55605A;
+    --accent:#1C543F;
+    --rule:#E0E5E1;
+    --amber:#8A6412;
+    --callout-bg:#F4EFE6;
+    --mono-bg:#E9EDEA;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0F1412;
+      --surface:#171E1A;
+      --ink:#E7ECE8;
+      --ink-soft:#9BAAA1;
+      --accent:#7FBFA0;
+      --rule:#25302A;
+      --amber:#D6AC55;
+      --callout-bg:#211D16;
+      --mono-bg:#1B231E;
+    }
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    max-width:40em;
+    margin:0 auto;
+    padding:2.75rem 1.5rem 6rem;
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.9rem;
+    line-height:1.25;
+    margin:0 0 .35rem;
+  }
+  h2{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.3rem;
+    margin:2.4rem 0 .9rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    scroll-margin-top:1rem;
+  }
+  h3{ font-size:1.05rem; margin:1.6rem 0 .6rem; }
+  p, li{ font-size:1rem; color:var(--ink); }
+  p{ margin:0 0 1rem; }
+  .meta, .updated{ color:var(--ink-soft); font-size:.95rem; margin:0 0 2.25rem; }
+  .lede{ color:var(--ink-soft); font-size:1.08rem; }
+  a{ color:var(--accent); }
+  ul, ol{ padding-left:1.3rem; margin:0 0 1rem; }
+  li{ margin-bottom:.5rem; }
+  code{
+    background:var(--mono-bg);
+    border-radius:5px;
+    padding:.1rem .35rem;
+    font-size:.9em;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  .callout{
+    background:var(--callout-bg);
+    border-left:4px solid var(--amber);
+    border-radius:10px;
+    padding:1.2rem 1.4rem .2rem;
+    margin:1.75rem 0;
+  }
+  .callout h2, .callout h3{ margin-top:0; border-top:none; padding-top:0; }
+  .toc{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:12px;
+    padding:1.1rem 1.4rem;
+    margin:2.25rem 0;
+  }
+  .toc p{
+    margin:0 0 .6rem;
+    font-weight:600;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+  }
+  .toc ol{ margin:0; padding-left:1.2rem; }
+  .toc li{ margin-bottom:.4rem; font-size:.95rem; }
+  .toc a{ text-decoration:none; }
+  .toc a:hover{ text-decoration:underline; }
+  .pagenav{
+    margin:0 0 2rem;
+    font-size:.95rem;
+    color:var(--ink-soft);
+  }
+  .pagenav a, .pagenav strong{ margin-right:1rem; }
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink-soft);
+    font-size:.9rem;
+  }
+  strong{ color:var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <p class="pagenav"><strong>Support</strong> <a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a></p>
+
+  <h1>Daywork</h1>
+  <p class="lede">Quote on the doorstep, invoice on completion, chase what's unpaid.</p>
+
+  <h2 id="contact">Getting help</h2>
+  <p>Email <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a>. One person reads it, and replies are usually within
+  a couple of days. Telling me your iPhone model and iOS version saves a round trip, and if a figure
+  looks wrong, the screenshot of the totals block with the reasoning underneath tells me almost
+  everything I need.</p>
+
+  <div class="callout">
+    <p><strong>Daywork is not your accountant, and I am not one either.</strong> The app works VAT,
+    the domestic reverse charge and CIS out from the published rules and from what you type. Those
+    figures are a working estimate to check against &mdash; not tax or accounting advice. I cannot
+    tell you what rate applies to your job, whether you should be VAT registered, or what to put on
+    your return. Please ask your accountant, and for anything about your CIS status or a VAT
+    treatment you are unsure of, ask HMRC.</p>
+  </div>
+
+  <h2 id="faq">Common questions</h2>
+
+  <h3>Why is VAT set on each line rather than on the invoice?</h3>
+  <p>Because one job is regularly more than one rate. Fitting insulation is zero rated while the
+  scaffolding to reach it might not be; a renovation of a dwelling empty for two years is reduced
+  rated while a repair next door is standard rated. In the United States it is even starker: in many
+  states the materials are taxable and the labour is not, on the same invoice. An app with a single
+  rate box gets those jobs wrong, so Daywork puts the rate on the line.</p>
+
+  <h3>What is the reverse charge, and when does Daywork use it?</h3>
+  <p>Since 1 March 2021, when a VAT-registered subcontractor bills a VAT-registered contractor for
+  construction services within CIS, the subcontractor charges no VAT and the customer accounts for
+  it instead (VAT Act 1994 s55A). Daywork applies it when your customer has a VAT number, is
+  registered for CIS as a contractor, has not told you they are an end user, and the job is
+  construction operations &mdash; and prints the wording HMRC requires. If any one of those is not
+  true, it charges VAT normally and tells you which one it was.</p>
+
+  <h3>My customer says they are an &ldquo;end user&rdquo;. What do I do?</h3>
+  <p>An end user is the person the work is ultimately for &mdash; they are not selling it on. Their
+  confirmation switches the reverse charge off, and you go back to charging VAT as normal. HMRC
+  expects that confirmation in writing, so tick <strong>Has confirmed they are an end user</strong>
+  on the customer, record the date, and keep their email.</p>
+
+  <h3>Why does the CIS deduction only come off part of my invoice?</h3>
+  <p>Because that is the rule, and it is the single most valuable thing in the app. A contractor
+  deducts 20% (or 30% if you are not registered) from the <em>labour</em> element only. Materials,
+  consumable stores, plant hire and the fuel for it are taken off first, and VAT is never in the base
+  at all. If you bill a job as one lump sum with no materials shown, HMRC's default is to treat the
+  whole payment as labour &mdash; which means paying 20% on your parts as well as your time. Break
+  the materials out.</p>
+
+  <h3>Is plant hire materials or labour?</h3>
+  <p>Plant hire on its own is treated with materials and stays out of the deduction. Plant hire
+  <em>with an operator</em> is labour and goes into it. Daywork defaults an expense line to materials
+  and lets you change it per line, because only you know which one it was.</p>
+
+  <h3>Why do my invoice lines add up differently from another app?</h3>
+  <p>Daywork rounds every line to the penny on its own and makes the total the sum of those rounded
+  lines. Some software adds the unrounded lines and rounds once at the end, which can leave the
+  printed lines a penny or two away from the printed total &mdash; and a customer with a calculator
+  always finds it. HMRC's VAT guide permits rounding each line-level calculation to the nearest
+  penny, so this approach is both correct and the one that adds up on the page.</p>
+
+  <h3>Markup or margin?</h3>
+  <p>They are different numbers and mixing them up is expensive. A £100 part sold at 50% markup goes
+  out at £150 and earns you a 33.3% margin, not 50%. Daywork prices from markup, because that is how
+  merchants quote, and shows you the margin next to it.</p>
+
+  <h3>Can I take a deposit and bill in stages?</h3>
+  <p>Yes, with Pro. A deposit reduces the final balance once you have actually invoiced it. Progress
+  claims are cumulative &mdash; claim 3 is &ldquo;the contract is 60% complete&rdquo; less everything
+  certified before &mdash; so the last claim always closes the job out exactly. Retention is held
+  back as a percentage with a release date, and the VAT on retained money is not due until the
+  retention is actually paid.</p>
+
+  <h3>Why does ageing start from the due date?</h3>
+  <p>Because ageing from the invoice date makes every invoice on 30-day terms look a month late the
+  day you send it, which trains you to ignore the report. Daywork buckets from when each invoice
+  actually fell due: current, 1&ndash;30, 31&ndash;60, 61&ndash;90 and 90+.</p>
+
+  <h3>Can it chase people for me?</h3>
+  <p>It drafts the message and you send it. The wording escalates on a ladder &mdash; a friendly note
+  on the day, a chase at a week, a firmer reminder at a fortnight, a final notice at a month &mdash;
+  and for a commercial debt it works out the statutory interest and fixed compensation you are
+  entitled to under the Late Payment of Commercial Debts (Interest) Act 1998. Daywork never sends
+  anything by itself and has no email account of its own.</p>
+
+  <h3>Why does it ask me for the Bank of England base rate?</h3>
+  <p>Because statutory interest is base rate plus 8%, and Daywork makes no network requests at all
+  &mdash; so it cannot look the rate up. Set it once in Settings and the estimate will be right until
+  the rate moves.</p>
+
+  <h3>Will my invoice numbers have gaps in them?</h3>
+  <p>No. A VAT invoice must carry a sequential number that uniquely identifies it, and a run with
+  holes in it is the first thing an inspection asks about. Daywork issues numbers gap-free, never
+  reuses one even after you delete an invoice, and has a gap check in
+  <strong>Settings &rsaquo; Invoice numbering</strong> so you can see the run.</p>
+
+  <h3>What is free, and what is Pro?</h3>
+  <p>Free keeps three customers and gives you unlimited quotes, unlimited invoices and the full PDF.
+  An app that stops you invoicing is an app that costs you money, so it doesn't. Pro adds unlimited
+  customers, aged receivables, the VAT and CIS summary for your accountant, deposits and progress
+  billing, recurring invoices, your branding on the PDF, and CSV export.</p>
+
+  <h3>How do I cancel?</h3>
+  <p>Subscriptions are managed by Apple, not by this app: open the Settings app, tap your name, then
+  <strong>Subscriptions</strong>. Cancelling stops the next renewal and you keep Pro until the period
+  you have paid for ends.</p>
+
+  <h3>The widget is not updating.</h3>
+  <p>Remove it and add it again. If it still shows nothing, open the app once &mdash; the widget
+  reads a small file the app writes, and there is nothing to read until the app has run after
+  installing.</p>
+
+  <h3>Can I move my data to another app?</h3>
+  <p>Yes. Pro exports invoices, invoice lines, payments, the tax summary and the aged report as CSV
+  from <strong>Money &rsaquo; Export</strong>. Do it before you delete the app; there is no
+  server-side copy.</p>
+
+  <h2 id="privacy">Privacy in one line</h2>
+  <p>Daywork collects nothing, sends nothing and has no account. The
+  <a href="privacy.html">full policy</a> says so at length.</p>
+
+  <footer>
+    <p>Daywork &middot; William Scott<br>
+    <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
